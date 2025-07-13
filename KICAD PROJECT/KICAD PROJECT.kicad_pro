@@ -58,7 +58,48 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|107825000|50175000|a116e7b4-768d-4174-b383-28e9e0dfa807|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|121350000|139089386|c5d28359-3514-451e-8394-4bc0a62e8533|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|35525000|139095000|d2ccaacb-4845-4322-b152-47c822558b6b|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "unconnected_items|106444444|118500000|605f26d7-592c-4586-be2d-ef3d469685cd|f57a1ccd-d866-416f-85bd-e4fe0b8ad331",
+          ""
+        ],
+        [
+          "unconnected_items|113100000|144928214|6aeda641-7cac-49ee-8594-edcb0b64f309|3493e058-63d4-4c82-aa5a-575ce89f0fcd",
+          ""
+        ],
+        [
+          "unconnected_items|40100000|138628214|f5fee0df-1b4b-45fa-95ec-103483db552f|2b6e8976-cee5-4c30-8562-0f0aaf930287",
+          ""
+        ],
+        [
+          "unconnected_items|50600000|144928214|9b16a8e0-61f8-495a-80b9-78d0cbae1f4b|d7efca97-610a-44be-8719-d3960e27d61d",
+          ""
+        ],
+        [
+          "unconnected_items|55111111|124800000|8724131e-ceee-49da-b835-65fdad12b82d|e2a4aed5-cd07-43dd-af5b-7e40a9aa2b08",
+          ""
+        ],
+        [
+          "unconnected_items|63666667|118500000|0b4bbbbc-e516-4865-9dfd-3e3208012fb5|928aa821-d165-474e-9e1f-9421a42782d0",
+          ""
+        ],
+        [
+          "unconnected_items|84933333|138628214|fa91b327-e729-4cdc-b316-2bb66be08761|65a3e6f2-a61f-451b-ba04-6355aebff594",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -106,7 +147,7 @@
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
-        "text_height": "warning",
+        "text_height": "ignore",
         "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
@@ -123,8 +164,8 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.09,
-        "min_connection": 0.09,
+        "min_clearance": 0.15,
+        "min_connection": 0.15,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
@@ -136,9 +177,9 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.09,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_track_width": 0.15,
+        "min_via_annular_width": 0.15,
+        "min_via_diameter": 0.3,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -193,6 +234,7 @@
         0.4,
         0.5,
         0.7,
+        0.8,
         1.0
       ],
       "tuning_pattern_settings": {
@@ -505,7 +547,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "../Gerber/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "../../../Github/ARC-Hardware/V1PCB.step",
@@ -593,6 +635,12 @@
         },
         {
           "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
           "label": "MANUFACTURER",
           "name": "MANUFACTURER",
           "show": false
@@ -613,6 +661,30 @@
           "group_by": false,
           "label": "MP",
           "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
           "show": false
         },
         {
